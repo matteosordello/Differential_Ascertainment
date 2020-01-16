@@ -71,7 +71,6 @@ s001 = np.exp(b3)/((1+np.exp(b1))*(1+np.exp(b2))*(1+np.exp(b3)))
 s000 = 1/((1+np.exp(b1))*(1+np.exp(b2))*(1+np.exp(b3)))
 
 for b in range(B2):
-    start_time = time.time() 
     # Create a new population and ascertainment table
     newNx = np.random.poisson(lam = rx, size = 1)
     newNy = np.random.poisson(lam = ry, size = 1)
